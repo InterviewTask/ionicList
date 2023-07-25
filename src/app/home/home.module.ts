@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import { DataService } from './services/data.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -12,8 +14,10 @@ import { HomePageRoutingModule } from './home-routing.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    HttpClientModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage],
+  providers:[DataService]
 })
 export class HomePageModule {}
