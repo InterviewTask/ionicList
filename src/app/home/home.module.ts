@@ -7,6 +7,7 @@ import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 import { DataService } from './services/data.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ListComponent } from './components';
 
 
 @NgModule({
@@ -17,7 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     HomePageRoutingModule,
     HttpClientModule
   ],
-  declarations: [HomePage],
+  declarations: [HomePage , ListComponent],
   providers:[DataService]
 })
 export class HomePageModule {}

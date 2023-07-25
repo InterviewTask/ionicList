@@ -1,0 +1,15 @@
+.list-container{
+ margin: 15px;
+  .search-container {
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.search-container ion-searchbar {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+}
