@@ -20,7 +20,6 @@ export class ListComponent  implements OnInit {
     this.dataService.getData().subscribe((data) => {
       this.data = data.data.list0 ;
       this.sortData();
-      console.log(data.data.list0);
     });
   }
   sortData() {

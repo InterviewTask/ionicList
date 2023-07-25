@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { DataResponce } from '../models/data.model';
 
 @Injectable()
 export class DataService {
@@ -8,7 +9,7 @@ export class DataService {
 
   constructor(private http: HttpClient) {}
 
-  getData(): Observable<any> {
-    return this.http.get<any>(this.dataUrl);
+  getData(): Observable<DataResponce> {
+    return this.http.get<DataResponce>(this.dataUrl);
   }
 }
